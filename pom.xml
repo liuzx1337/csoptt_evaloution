@@ -39,6 +39,9 @@
         <java.version>1.8</java.version>
         <swagger.version>2.7.0</swagger.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <csoptt_utils.version>1.0.4</csoptt_utils.version>
+        <csoptt_config.version>1.0.6</csoptt_config.version>
+        <csoptt_user.version>1.0.0</csoptt_user.version>
     </properties>
 
     <dependencyManagement>
@@ -46,13 +49,19 @@
             <dependency>
                 <groupId>com.csoptt</groupId>
                 <artifactId>utils</artifactId>
-                <version>1.0.2</version>
+                <version>${csoptt_utils.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.csoptt</groupId>
                 <artifactId>csoptt_config-properties</artifactId>
-                <version>1.0.2</version>
+                <version>${csoptt_config.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.csoptt</groupId>
+                <artifactId>csoptt_user-entity</artifactId>
+                <version>${csoptt_user.version}</version>
             </dependency>
 
             <dependency>
